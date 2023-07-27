@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Request</title>
+    <style>
+        * {
+            box-sizing: boreder-box;
+        }
+        
+        body {
+            margin: 15px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 5px 4px;
+            font-size: 20px;
+        }
+        
+        .container{
+            background-color: rgb(231, 120, 155);
+            border: 2px solid black;
+            border-radius: 3px;
+            margin: 1px;
+            padding: 5px 30px 10px 10px ;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        textarea,select{
+              width: 100%;
+              padding: 10px;
+              border: 2px solid rgb(24, 111, 170);
+              border-radius: 10px;
+              background-color: rgb(245, 234, 221);
+        }
+        
+        fieldset{
+            background-color:rgb(245, 234, 221);
+            border: 2px solid rgb(24, 111, 170);
+        }
+        
+        .main-head{
+            text-align: center;  
+        }
+        
+        .button{
+            padding: 12px 20px;
+            background-color: rgb(37, 186, 209);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            margin: 10px;
+            width: 30%;
+        }
+        
+        .buttons{
+            text-align: center;
+        }
+        
+        .button:hover{
+            background-color: #a4b73b;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h2 class="main-head">Create Request</h2>
+            <hr>
+            <h3> Patient Information </h3>
+            <p>
+                Category:
+                <select>
+                    <option value="">-select your category-</option>
+                    <option value="1">Operation</option>
+                    <option value="2">Hospitalization</option>
+                    <option value="3">Medicinal</option>
+                </select>
+            </p>
+            <p>Problem:
+                <input type="text" required name="Problem" placeholder="Enter you problem">
+            </p>
+
+            <p>
+                Description:
+                <textarea type="text" name="description" placeholder="Enter the problem in details" cols="45" rows="5"></textarea>
+            </p>
+
+            <p>
+                Name:
+                <input type="text" name="myname" placeholder="Patient Name">
+            </p>
+
+            <p>
+                Age:
+                <input type="number" name="age" placeholder="Patient Age">
+            </p>
+
+            <p>
+                Mobile Number:
+                <input type="tel" name="number" placeholder="Patient Number">
+            </p>
+
+            <p>
+                Email:
+                <input type="email" name="email" placeholder="your Email">
+            </p>
+
+            <p>
+                Address:
+                <textarea type="text" name="description" placeholder="Enter your address" cols="45" rows="5"></textarea>
+            </p>
+
+            <p>
+                Gender :
+               <fieldset>
+                      Male<input type="radio" name="gender">
+                      Female<input type="radio" name="gender">
+               </fieldset>
+            </p>
+            <p>
+
+            <hr>
+        <div class="contains">
+            <h3> Payment Information </h3>
+            
+                Amount:
+                <input type="number" name="amount" placeholder="Enter amount you want">
+            </p>
+            <p>
+                Receiving Type:
+                <select>
+                    <option value="">--Select receiveing type--</option>
+                    <option value="4">Paytm</option>
+                    <option value="5">PhonePe</option>
+                    <option value="6">Bank</option>
+                    <option value="7">UPI</option>
+                </select>
+            </p>
+
+            <p>
+                Enter Account number:
+                <input type="number" name="account">
+                <br>
+                Enter IPFSC code:
+                <input type="text" name="IPFSC">
+                <br>
+                Enter Paytm and PhonePe number:
+                <input type="tel" name="number">
+                <br>
+                Enter Upi ID:
+                <input type="tel" name="UPI">
+            </p>
+        <div class="buttons">
+            <button class="button" type="submit">
+                Submit Now
+            </button>
+        </div>
+        </div>
+        </form>
+
+    </div>
+</body>
+</html>
